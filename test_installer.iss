@@ -13,7 +13,7 @@ Name: {group}\Run Script; Filename: {app}\script.bat; WorkingDir: {app}; AfterIn
 [Code]
 procedure SetElevationBit(Filename: string);
 var
-  Buffer: string;
+  Buffer: AnsiString;
   Stream: TStream;
 begin
   Filename := ExpandConstant(Filename);
